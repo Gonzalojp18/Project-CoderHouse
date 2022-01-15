@@ -1,0 +1,707 @@
+html * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#main-box {
+    background-color: #e5e5e5;
+}
+
+.nav-logo {
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.nav-container {
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    align-items: center;
+    position:sticky;
+    top:0;
+}
+
+.container-section {
+    background-color: rgb(0, 19, 33);
+}
+
+div.nav-container img {
+    width: 5vw;
+    }
+
+.nav-input, .label {
+    display: none;
+}
+
+.nav-menu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+}
+
+.access-two ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+
+.access-two a {
+    font-size: 1.2em;
+    color: #070719;
+    text-decoration: overline;
+
+}
+
+/******************BOX CENTER*¨****************************/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+div.animaciones {
+    height: 100vh;
+    animation-name: test;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes test {
+    0% {
+    background-image: url('./recursos/Animaciones/wallhaven-0qrwel.jpg');
+    }
+    100% {
+    background-image: url('./recursos/Animaciones/1rt\ opcion.jpg')
+    }
+}
+
+div.content-center {
+    height: 100vh;
+    padding:10em;
+}
+
+div.box-center h1 {
+    font-size: 5em;
+    color: #070719;
+}
+
+div.box-center p {
+    color:#787d85;
+}
+
+/************************ANIMATION&TRANSITION***********************/
+
+.linea-subtitle {
+    width: 24em;
+    /* margin: 0 auto; */
+    font-size: 2em;
+    text-align: center;
+    /* white-space determina como se maneja el espacio en blanco dentro de un elemento */
+    white-space: nowrap;
+    /* hidden lo que haya fuera del contenedor no se vea ni se genere un scroll*/
+    overflow: hidden;
+}
+
+.subtitle {
+    animation: texto 5s;
+}
+
+@keyframes texto {
+    from {
+        width: 0;
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+
+    to {
+        width: 28em;
+        border-right-color: transparent;
+    }
+}
+
+div.content-center span {
+    color: #070719;
+    font-size: 1.5em;
+}
+
+div.container-icons {
+    display: flex;
+    justify-content: space-around;
+    padding-top:6rem;
+}
+
+.icon {
+    width: 10vw;
+    transition: all 1s ease-in-out;
+
+}
+
+.box-icon:hover {
+    transform: scalex(1.2);
+}
+
+/* ************************* */
+
+/* POR DEFINIR LOS STATUS DE DEMAS LINK */
+/*
+
+
+a:link {
+    color:#F4692C;
+} */
+
+/* a:hover{
+    background-color: #cdcdda;
+} */
+
+/* a:active {
+    background-color: #0A288C;
+} */
+
+
+/***********************SECTION AGENCIA**************************/
+
+div.box-agencia {
+    text-align: center;
+    font-size: 2em;
+    padding: 1rem;
+    background-color: #f3f3f3;
+}
+
+/* codigo a reutilizar para los titulos de secciones
+    text-align: center;
+    font-size: 2em;
+    padding: 1rem;
+    background-color: #f1f1f1; */
+
+section.about {
+    display: flex;
+    justify-content: space-around;
+}
+
+article.box-information {
+    color:#070719;
+    width: 30rem;
+    font-size: 1em;
+    margin-top: 5em;
+}
+
+article.box-items {
+    display: flex;
+    justify-content: flex-end;
+    width: 40rem;
+    flex-wrap: wrap;
+}
+
+div.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 40%;
+    font-size:1em;
+    margin: .5rem;
+}
+
+div.item h2 {
+    font-size: 4em;
+    color: #f3f3f3;
+}
+
+div.box-costumer {
+    margin: 2em;
+}
+
+div.box-costumer ul {
+    display: flex;
+    list-style: none;
+    padding: 1em;
+}
+
+.costumers img {
+    width: 5vw;
+    height: 10vh;
+    margin: 2em;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+/**********************SECTION SERVICIOS**********************/
+
+section.container-main {
+    text-align: center;
+    font-size: 2em;
+    padding: 1rem;
+    background-color: #f3f3f3;
+}
+
+section.container-services {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    padding: 2em;
+}
+
+.maincontainer {
+    position: relative;
+    width:30vw;
+    height: 40vh;
+    padding: auto 4em;
+}
+
+.font {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.font img {
+    border-radius: .5em;
+}
+
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    font-size: 1em;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+
+.back a {
+    text-decoration: none;
+    color:#070719;
+}
+
+article.service {
+    position: absolute;
+    width:30vw;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+}
+
+article.service:hover {
+    transform: rotateY(180deg);
+}
+
+article.service img {
+    width: 15vw;
+    height: 20vh;
+}
+
+/*************************SECTION BLOG***********************/
+
+section.second-section {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+div.section-blog {
+    text-align: center;
+    font-size: 2em;
+    width: 100%;
+    padding: 1rem;
+    background-color: #f3f3f3;
+}
+
+.parent {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: .8rem;
+    padding-top: 1em;
+}
+
+    div.card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20vh;
+    width: 40vw;
+    background-color:#f3f3f3;
+    border-radius: 10px;
+    transition: all 1s linear;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border: 1px solid rgba( 255, 255, 255, 0.18 )
+}
+
+.card-text a{
+    text-decoration: none;
+    color:#f3f3f3;
+    background-color: #070747;
+    width: 15%;
+    font-size: .6em;
+}
+
+div.card-image img {
+    width: 15vw;
+    height: 20vh;
+    border-radius: 10px;
+    background: rgba( 255, 255, 255, 0.95 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border: 1px solid rgba( 255, 255, 255, 0.18 )
+}
+
+div.card-text:hover {
+    transform: scale(1.1);
+}
+
+
+/***********************SECTION CONTACT*********************/
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.aboutus {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 20px;
+    background-color: #f3f3f3;
+}
+
+.form {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutus p {
+    color: #070719;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.textarea {
+    width:80%;
+    height: 30vh;
+    border: 1px solid #0090;
+    background-color: #f2f2f2;
+    margin-top: 10px;;
+}
+
+.text{
+    width:80%;
+    height: 5vh;
+    border: 1px solid #0090;
+    background-color: #f2f2f2;
+    margin-top: 10px;
+}
+.submit {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#399;
+    color:#fff;
+    padding:5px 5px;
+    margin:10px;
+    font-size:16px;
+    border-radius:100px;
+    cursor:pointer;
+    border:1px transparent;
+    width: 20%;
+}
+
+.form a {
+    text-decoration: none;
+    color:white;
+    font-size: 1em;
+    font-family: Georgia;
+}
+
+/**************************SECTION FOOTER**************************/
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(9, 9, 9, .8);
+    height: 20vh;
+}
+
+div.inf {
+    color: white;
+    font-size: .8em;
+}
+
+.link {
+    width: 20vw;
+    color: white;
+    font-size: .8em;
+}
+
+.footer a {
+    font-size: .8rem;
+    color: white;
+    text-decoration: none;
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+
+
+    /* MQUERIES SECTION HOME */
+.label {
+    display: block;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+    .access-two ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+    .access-two a {
+    font-size: 1.2em;
+    color: #070719;
+    text-decoration: overline;
+}
+
+    .nav-menu {
+    position: fixed;
+    top: 100px;
+    bottom: 1;
+    left: 0;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out;
+}
+
+    .nav-input:checked + .nav-menu {
+    clip-path: circle(100% at center);
+}
+
+    .label:hover {
+    transform: scale(1.1);
+}
+
+div.nav-container img {
+    width: 10vw;
+}
+
+div.content-center {
+    height: 100vh;
+    color: #444554;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    white-space: nowrap;
+}
+
+div.box-center h1 {
+    font-size: 2em;
+    color: #070719;
+}
+
+div.box-center p {
+    color:#fff;
+    font-size: .8em;
+}
+
+div.container-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.icon {
+    transition: all 1s ease-in-out;
+}
+
+.box-icon:hover {
+    transform: scale(0.5) translate(-100%, -100%);
+}
+
+
+/*****************MQUERIES SECTION AGENCIA ****************/
+
+
+section.agencia {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+div.box-agencia {
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+section.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+article.box-information {
+    width: 30vw;
+    font-size: .8em;
+    margin-top: 20px;
+    padding: 1em;
+}
+
+article.box-items {
+    display: flex;
+    justify-content: center;
+    width: 70vw;
+    flex-wrap: wrap;
+}
+
+div.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 20vw;
+    height: 50vh;
+    font-size:.8em;
+}
+
+div.item h2 {
+    font-size: 2em;
+    color: #f3f3f3;
+}
+
+div.box-costumer {
+    margin: 60px;
+}
+
+
+div.box-costumer ul {
+    display: flex;
+    list-style: none;
+}
+
+.costumers img {
+    width: 20vw;;
+    height: 10vh;
+    margin: auto;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+/**************************MQUERIES SECTION SERVICE*******************/
+
+section.container-main {
+    text-align: center;
+    padding: 10px;
+    width: auto;
+    font-size: .8em;
+}
+
+section.container-services {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+    text-align: center;
+    background-color: #f3f3f3;
+    gap: 30px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+article.service {
+    width: 50vw;
+    gap: 3px;
+    font-size: .8em;;
+
+}
+
+article.service img {
+    width:100%;
+    height: 100%;
+}
+
+.maincontainer {
+    position: relative;
+    width:40vw;
+    height: 10vh;
+}
+
+.font {
+    width: 100%;
+    height:100%;
+}
+
+.back {
+    width: 100%;
+    height: 100%;
+}
+
+.parent {
+    grid-gap: .4rem;
+    padding-top: 1em;
+    width: 100vw;
+}
+
+/*************************MQUERIES SECTION BLOG**********************/
+
+    div.card-text {
+    font-size: .8em;
+    height: 20vh;
+    width: 40vw;
+    
+}
+
+div.card-image img {
+    width: 40vw;
+    height: 15vh;
+}
+
+.card-text a{
+    color:#f3f3f3;
+    background-color: #070747;
+    width: 30%;
+    font-size: .8em;
+}
+
+/***************************MQUERIES FOOTER**********************/
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(9, 9, 9, .8);
+    height: 20vh;
+}
+
+div.inf {
+    color: #f3f3f3;
+    font-size: .8em;
+    width: 20vw;
+}
+
+.link {
+    width: 20vw;
+    color: #f3f3f3;
+    font-size: .8em;
+}
+
+}
+
