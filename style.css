@@ -534,7 +534,7 @@ div.container-icons {
 }
 
 
-/*****************MQUERIES SECTION AGENCIA ****************/
+/*********************MQUERIES SECTION AGENCIA *************************/
 
 
 section.agencia {
@@ -599,7 +599,7 @@ div.box-costumer ul {
     cursor:pointer;
 }
 
-/**************************MQUERIES SECTION SERVICE*******************/
+/*********************MQUERIES SECTION SERVICE*************************/
 
 section.container-main {
     text-align: center;
@@ -656,7 +656,7 @@ article.service img {
     width: 100vw;
 }
 
-/*************************MQUERIES SECTION BLOG**********************/
+/************************MQUERIES SECTION BLOG******************/
 
     div.card-text {
     font-size: .8em;
@@ -677,7 +677,7 @@ div.card-image img {
     font-size: .8em;
 }
 
-/***************************MQUERIES FOOTER**********************/
+/* *********************MQUERIES FOOTER **********************/
 
 .footer {
     display: flex;
