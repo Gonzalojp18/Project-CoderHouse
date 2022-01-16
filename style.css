@@ -424,13 +424,11 @@ div.card-text:hover {
     font-family: Georgia;
 }
 
-/**************************SECTION FOOTER**************************/
-
 .footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgba(9, 9, 9, .8);
+    background-color: #070719;
     height: 20vh;
 }
 
@@ -443,6 +441,8 @@ div.inf {
     width: 20vw;
     color: white;
     font-size: .8em;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer a {
