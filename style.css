@@ -12,93 +12,37 @@ body {
     background-color: #e5e5e5;
 }
 
-.nav-logo {
-    font-size: 1.5em;
-    font-weight: 900;
-}
-
-.nav-container {
-    display: flex;
-    padding: 30px;
-    justify-content: space-around;
-    align-items: center;
-    position:sticky;
-    top:0;
-}
-
-div.nav-container img {
-    width: 5vw;
-    }
-
-.nav-input, .label {
-    display: none;
-}
-
-.nav-menu {
-    display: grid;
-    grid-auto-flow: column;
-    gap: 3em;
-}
-
-.access-two ul {
-    list-style: none;
-    display: flex;
-    gap: 2em;
-}
-
-.access-two a {
-    font-size: 1.2em;
-    color: #070719;
-    text-decoration: overline;
-
-}
-
-/******************BOX CENTER*¨****************************/
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-div.animaciones {
-    height: 100vh;
+/* HEADER */
+.animation {
     animation-name: test;
-    animation-duration: 5s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+
+.link-size {
+font-size: 1.5em;
+}
+
+div.position button {
+position: absolute;
+right: 0;
+}
+/* ANIMATIONS BACKGROUND HEADER */
 
 @keyframes test {
     0% {
     background-image: url('./recursos/Animaciones/wallhaven-0qrwel.jpg');
     }
     100% {
-    background-image: url('./recursos/Animaciones/1rt\ opcion.jpg')
+    background-image: url('./recursos/Animaciones/1rt\ opcion.jpg');
     }
 }
 
-div.content-center {
-    height: 100vh;
-    padding:10em;
-}
-
-div.box-center h1 {
-    font-size: 5em;
-    color: #070719;
-}
-
-div.box-center p {
-    color:#787d85;
-}
-
-/************************ANIMATION&TRANSITION***********************/
-
 .linea-subtitle {
-    width: 24em;
-    /* margin: 0 auto; */
-    font-size: 2em;
-    text-align: center;
-    /* white-space determina como se maneja el espacio en blanco dentro de un elemento */
+    width: 26em;
+    font-size: 1.5em;
     white-space: nowrap;
-    /* hidden lo que haya fuera del contenedor no se vea ni se genere un scroll*/
     overflow: hidden;
 }
 
@@ -106,56 +50,55 @@ div.box-center p {
     animation: texto 5s;
 }
 
+/* ANIMATION <SUBTITLE */
+
 @keyframes texto {
     from {
-        width: 0;
-        border-right-color: rgba(255, 255, 255, .75);
+        width: 6em;
     }
 
     to {
-        width: 28em;
-        border-right-color: transparent;
+        width: 30em;
+
     }
 }
 
-div.content-center span {
-    color: #070719;
-    font-size: 1.5em;
+div.center-box span {
+    font-size: 2em;
 }
 
-div.container-icons {
-    display: flex;
-    justify-content: space-around;
-    padding-top:6rem;
+div.center-box {
+height: 60vh;
+width: 40vw;
+}
+
+div.container-icon {
+height: 20vh;
+display: flex;
+justify-content: space-evenly;
 }
 
 .icon {
-    width: 10vw;
-    transition: all 1s ease-in-out;
+width: 10vw;
+transition: all 1s ease-in-out;
 
 }
 
 .box-icon:hover {
-    transform: scalex(1.2);
+transform: scalex(1.2);
 }
 
-/* ************************* */
+/* PSEUDOCLASES */
 
-/* POR DEFINIR LOS STATUS DE DEMAS LINK */
-/*
-
-
-a:link {
-    color:#F4692C;
-} */
-
-/* a:hover{
+a:hover{
     background-color: #cdcdda;
-} */
+    transition: 1s ease-in;
+    border-radius: 20%;
+}
 
-/* a:active {
+a:active {
     background-color: #0A288C;
-} */
+}
 
 
 /***********************SECTION AGENCIA**************************/
@@ -406,7 +349,7 @@ div.card-text:hover {
     display:flex;
     align-items: center;
     justify-content: center;
-    background-color:#399;
+    background-color:#070747;
     color:#fff;
     padding:5px 5px;
     margin:10px;
