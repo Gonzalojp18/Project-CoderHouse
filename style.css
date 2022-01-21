@@ -90,13 +90,13 @@ transform: scalex(1.2);
 
 /* PSEUDOCLASES */
 
-a:hover{
+a.nav-link:hover{
     background-color: #cdcdda;
     transition: 1s ease-in;
     border-radius: 20%;
 }
 
-a:active {
+a.nav-link:active {
     background-color: #0A288C;
 }
 
@@ -394,8 +394,9 @@ div.inf {
     text-decoration: none;
 }
 
+/* MEDIAS QUERYS MOBILE */
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+@media only screen and (min-width : 320px) and (max-width : 480px){
 
 
     /* MQUERIES SECTION HOME */
